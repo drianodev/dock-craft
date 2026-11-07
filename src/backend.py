@@ -35,7 +35,7 @@ KEY_METADATA = {
     'custom-theme-shrink': {'type': 'boolean', 'default': True},
     'show-favorites': {'type': 'boolean', 'default': True},
     'show-running': {'type': 'boolean', 'default': True},
-    'isolate-monitors': {'type': 'boolean', 'default': False},
+    'isolate-monitors': {'type': 'boolean', 'default': True},
     'isolate-workspaces': {'type': 'boolean', 'default': False},
     'unity-backlit-items': {'type': 'boolean', 'default': False},
     'custom-theme-customize-running-dots': {'type': 'boolean', 'default': False},
@@ -56,6 +56,15 @@ class DockBackend:
         self.settings = Gio.Settings.new(SCHEMA_ID)
         self._callbacks: Dict[str, List[Callable[[str, Any], None]]] = {}
         self._changed_handler_id = self.settings.connect('changed', self._on_setting_changed)
+
+        # Safeguard 3: GNOME Shell 46 & ubuntu-dock real-time window tracking fix.
+        # Upstream ubuntu-dock only hooks into window creation and restacking signals
+        # (global.display 'restacked') when isolate-monitors or isolate-workspaces is True.
+        # When both are False, ubuntu-dock does not receive events when unpinned apps launch,
+        # so they never appear on the dock until manual extension reload.
+        # Ensuring isolate-monitors is True enables the event listener without hiding apps across workspaces.
+        if not self.get_value('isolate-monitors') and not self.get_value('isolate-workspaces'):
+            self.set_value('isolate-monitors', True)
 
     def _on_setting_changed(self, settings: Gio.Settings, key: str):
         if key in self._callbacks:
@@ -104,6 +113,10 @@ class DockBackend:
         # We safely map METRO to DASHES (which draws identical clean horizontal bar indicators safely).
         if key == 'running-indicator-style' and str(value).upper() == 'METRO':
             value = 'DASHES'
+
+        # Safeguard 3: Prevent dropping the 'restacked' signal listener in ubuntu-dock
+        if key == 'isolate-monitors' and not value and not self.get_value('isolate-workspaces'):
+            value = True
 
         meta = KEY_METADATA.get(key)
         try:

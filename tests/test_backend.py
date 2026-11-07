@@ -37,6 +37,13 @@ class TestBackend(unittest.TestCase):
         self.backend.set_value('show-running', True)
         self.assertTrue(self.backend.get_value('show-running'))
 
+    def test_isolate_monitors_safeguard(self):
+        # When isolate-workspaces is False, isolate-monitors should remain True
+        # to ensure ubuntu-dock maintains the restacked window listener for real-time app additions
+        self.backend.set_value('isolate-workspaces', False)
+        self.backend.set_value('isolate-monitors', False)
+        self.assertTrue(self.backend.get_value('isolate-monitors'))
+
 
 if __name__ == '__main__':
     unittest.main()

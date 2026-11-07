@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/badge/Python-3.12%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.12">
   <img src="https://img.shields.io/badge/GTK-4.0-4A90D9?style=for-the-badge&logo=gtk&logoColor=white" alt="GTK 4">
   <img src="https://img.shields.io/badge/Libadwaita-1.5-3584E4?style=for-the-badge" alt="Libadwaita 1.5">
-  <img src="https://img.shields.io/badge/Testes-13%2F13%20Passing-brightgreen?style=for-the-badge&logo=checkmarx&logoColor=white" alt="Tests Passing">
+  <img src="https://img.shields.io/badge/Testes-14%2F14%20Passing-brightgreen?style=for-the-badge&logo=checkmarx&logoColor=white" alt="Tests Passing">
   <img src="https://img.shields.io/badge/Licen%C3%A7a-MIT-blue.style=for-the-badge" alt="License MIT">
 </p>
 

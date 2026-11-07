@@ -19,6 +19,7 @@
     "show-mounts": false,
     "show-favorites": true,
     "show-running": true,
+    "isolate-monitors": true,
     "show-show-apps-button": true,
     "show-apps-at-top": false,
     "click-action": "focus-minimize-or-previews",

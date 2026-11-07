@@ -25,6 +25,7 @@ class DockCraftWindow(Adw.ApplicationWindow):
 
         self.set_title("DockCraft")
         self.set_default_size(1020, 750)
+        self.set_size_request(650, 500)
 
         # Toast Overlay
         self.toast_overlay = Adw.ToastOverlay()
