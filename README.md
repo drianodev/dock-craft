@@ -21,10 +21,6 @@
 
 ---
 
-> **Design Responsivo com `Adw.Breakpoint`**: Em telas amplas, um simulador interativo do seu desktop fica fixo à esquerda enquanto você ajusta opções à direita. Em janelas menores ou tela dividida, a interface transiciona suavemente para o topo em formato recolhível, mantendo o fluxo de trabalho imperturbado.
-
----
-
 ## 💡 Por que o DockCraft?
 
 O Ubuntu vem por padrão com uma barra lateral eficiente, mas engessada. Usuários que buscam uma experiência moderna — como a ilha flutuante do **macOS**, a barra corporativa centralizada do **Windows 11** ou a agilidade de docks minimalistas — frequentemente precisam recorrer a scripts frágeis de terminal ou dezenas de extensões conflitantes.
