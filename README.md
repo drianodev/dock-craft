@@ -21,12 +21,6 @@
 
 ---
 
-## 📸 Demonstração da Interface
-
-<p align="center">
-  <img src="data/screenshots/app_preview.png" alt="DockCraft em Execução no Ubuntu 24.04" width="750">
-</p>
-
 > **Design Responsivo com `Adw.Breakpoint`**: Em telas amplas, um simulador interativo do seu desktop fica fixo à esquerda enquanto você ajusta opções à direita. Em janelas menores ou tela dividida, a interface transiciona suavemente para o topo em formato recolhível, mantendo o fluxo de trabalho imperturbado.
 
 ---
