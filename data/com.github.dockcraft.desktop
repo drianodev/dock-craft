@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=DockCraft
+GenericName=Personalizador do Dock do Ubuntu
+Comment=Personalize o design, estilo flutuante, indicadores e usabilidade do dock do Ubuntu
+Exec=/home/drianodev/Documents/projects/dock-ubuntu/bin/dockcraft
+Icon=dockcraft
+Terminal=false
+Type=Application
+Categories=Utility;Settings;DesktopSettings;GTK;
+Keywords=dock;ubuntu;dash-to-dock;personalizacao;customizer;macos;windows;
+StartupNotify=true
+StartupWMClass=com.github.dockcraft

@@ -1,0 +1,29 @@
+{
+  "name": "macOS Cupertino",
+  "description": "Dock flutuante (estilo ilha) na base, ícones centralizados, cantos arredondados, lixeira e clique para minimizar.",
+  "icon": "computer-apple-symbolic",
+  "settings": {
+    "dock-position": "BOTTOM",
+    "extend-height": false,
+    "always-center-icons": true,
+    "dash-max-icon-size": 52,
+    "autohide": true,
+    "intellihide": true,
+    "transparency-mode": "FIXED",
+    "background-opacity": 0.6,
+    "custom-background-color": true,
+    "background-color": "#1f1f23",
+    "running-indicator-style": "DOTS",
+    "running-indicator-dominant-color": true,
+    "show-trash": true,
+    "show-mounts": false,
+    "show-favorites": true,
+    "show-running": true,
+    "show-show-apps-button": true,
+    "show-apps-at-top": false,
+    "click-action": "focus-minimize-or-previews",
+    "scroll-action": "cycle-windows",
+    "custom-theme-shrink": true,
+    "unity-backlit-items": false
+  }
+}

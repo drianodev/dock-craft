@@ -1,0 +1,1 @@
+"""DockCraft core package"""

@@ -1,0 +1,28 @@
+{
+  "name": "Ubuntu Unity Clássico",
+  "description": "Barra lateral esquerda de altura total, ícones clássicos e botão de aplicativos no topo.",
+  "icon": "ubuntu-symbolic",
+  "settings": {
+    "dock-position": "LEFT",
+    "extend-height": true,
+    "always-center-icons": false,
+    "dash-max-icon-size": 48,
+    "autohide": false,
+    "intellihide": true,
+    "transparency-mode": "DEFAULT",
+    "background-opacity": 0.8,
+    "custom-background-color": false,
+    "running-indicator-style": "DOTS",
+    "running-indicator-dominant-color": false,
+    "show-trash": true,
+    "show-mounts": true,
+    "show-favorites": true,
+    "show-running": true,
+    "show-show-apps-button": true,
+    "show-apps-at-top": true,
+    "click-action": "focus-or-appspread",
+    "scroll-action": "switch-workspace",
+    "custom-theme-shrink": false,
+    "unity-backlit-items": false
+  }
+}

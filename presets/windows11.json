@@ -1,0 +1,29 @@
+{
+  "name": "Windows 11 Modern",
+  "description": "Barra centralizada na base com indicadores retos (barras), clique para minimizar e visual corporativo limpo.",
+  "icon": "application-default-symbolic",
+  "settings": {
+    "dock-position": "BOTTOM",
+    "extend-height": true,
+    "always-center-icons": true,
+    "dash-max-icon-size": 42,
+    "autohide": false,
+    "intellihide": false,
+    "transparency-mode": "FIXED",
+    "background-opacity": 0.88,
+    "custom-background-color": true,
+    "background-color": "#18181b",
+    "running-indicator-style": "DASHES",
+    "running-indicator-dominant-color": true,
+    "show-trash": false,
+    "show-mounts": false,
+    "show-favorites": true,
+    "show-running": true,
+    "show-show-apps-button": true,
+    "show-apps-at-top": false,
+    "click-action": "minimize-or-previews",
+    "scroll-action": "cycle-windows",
+    "custom-theme-shrink": true,
+    "unity-backlit-items": false
+  }
+}
